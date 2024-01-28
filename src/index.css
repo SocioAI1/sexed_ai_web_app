@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.app {
+    background-color: #343541;
+    display: flex;
+    flex-direction: row;
+}
+
+.side-bar {
+    background-color: #202123;
+    height: 100vh;
+    width: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+button {
+    border: solid 0.5px rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color:;
+    box-shadow: rgba(220, 161, 191, 0.8) 0 10px 15px,
+    rgba(220, 161, 191, 0.8) 0 -12px 30px,
+    rgba(220, 161, 191, 0.8) 0 4px 5px,
+    rgba(220, 161, 191, 0.8) 0 12px 3px,
+    rgba(220, 161, 191, 0.8) 0 -3px 5px;
+
+}
+
+nav {
+    padding: 5px;
+    border-top: solid 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.history {
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+
+}
+
+.history li {
+    list-style-type: none;
+    padding: 15px 3px ;
+    margin-left: 2px;
+    cursor: pointer;
+    border: white;
+
+}
+
+.history li:hover{
+    background-color: #444654;
+    border-radius: 10px;
+    box-shadow: rgba(4, 74, 14, 0.77)0 10px 15px,
+    rgba(4, 74, 14, 0.77)0 -12px 30px,
+    rgba(4, 74, 14, 0.77)0 4px 5px,
+    rgba(4, 74, 14, 0.77)0 12px 3px,
+    rgba(4, 74, 14, 0.77)0 -3px 5px;
+
+
+
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.bottom-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+    padding: 10px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+
+}
+
+input {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 54px 55px,
+    rgba(0, 0, 0, 0.05) 0 -12px 30px,
+    rgba(0, 0, 0, 0.05) 0 4px 5px,
+    rgba(0, 0, 0, 0.05) 0 12px 3px,
+    rgba(0, 0, 0, 0.05) 0 -3px 5px;
+}
+#submit{
+    position: absolute;
+    bottom: 12px;
+    right:15px;
+    cursor: pointer;
+    font-size: 25px;
+    width: 29px;
+
+
+}
+
+#submit:hover{
+    /*border-radius: 150px;*/
+    /*background-color: #343541;*/
+    box-shadow: rgba(116, 133, 159, 0)0 10px 15px,
+    rgba(116, 133, 159, 0)0 -12px 30px,
+    rgba(116, 133, 159, 0)0 4px 5px,
+    rgba(116, 133, 159, 0)0 12px 3px,
+    rgba(116, 133, 159, 0)0 -3px 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.feed{
+    text-align: center;
+    overflow: scroll;
+    inline-size: 150px;
+    width: 100%;
+    padding: 0;
+
+}
+
+.feed li{
+    display: flex;
+    background-color: #444654;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+}
+.feed p{
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    text-align: left;
+}
+
+.feed p.role{
+    min-width: 100px;
+
+}
+
+.history .usertIttle{
+    background-color: #343541;
+    border: 2px solid rgba(254,245,295,0.5);
 }
